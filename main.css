@@ -1,0 +1,27 @@
+h1 {
+    margin-left: 70px;
+}
+
+li {
+    list-style: none;
+    padding: 2px;
+}
+
+ul li label {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+[type="submit"] {
+    clear: left;
+    margin: 10px 0 0 110px;
+    font-size: 18px;
+    width: 13%;
+    min-width: 100px;
+}
+
