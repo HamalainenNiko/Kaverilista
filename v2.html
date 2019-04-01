@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="v2.css">
+    <script src="v2.js"></script>
+</head>
+<body>
+    <h1>Kaverilista</h1>
+    <p>Syötä nimi:</p>
+
+    <input type="text" id="userinput"/>
+    <input type="button" onclick="addFriend(); document.getElementById('userinput').value = ''"
+    value="Lisää Kaveri" />
+    <input type="button" onclick="removeFriend()" value="Poista Kaveri">
+    <input type="button" onclick="sortFriends()" value="Järjestä Kaverit">
+    <p id="demo"></p>
+<br>
+    <a href="index.html"><button>Lista v1</button></a>
+</body>
+</html>
