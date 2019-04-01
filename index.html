@@ -3,40 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kaverilista v1</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src=""></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <h1>Kaverilista</h1>
-<form name="registration" onSubmit="return formValidation();">
-    <ul>
-        <li><label for="friend">Kaveri 1:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 2:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 3:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 4:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 5:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 6:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 7:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 8:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 9:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><label for="friend">Kaveri 10:</label></li>
-        <li><input type="text" size="12" name="friend" placeholder="Lisää nimi"></li>
-        <li><input type="submit" name="submit" value="submit" /></li>
-        </ul>
+    <p>Kirjoita 10 nimeä listaan</p>
+<ul>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
+    <li><input type="text" class="userinput"></li>
 
-    
-</form>
-<a href="v2.html"><button>Lista v2</button></a>
+    <input type="button" onclick="listFriends(); document.getElementsByClassName('userinput').value = ''"
+    value="Lisää kaverit" />
+    <p id="demo"></p>
+</ul>
+
+    <a href="v2.html"><button>Lista v2</button></a>
 </body>
 </html>
