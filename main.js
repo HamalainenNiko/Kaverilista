@@ -1,8 +1,13 @@
 function myFunction(){
-    var person = prompt("Kirjoita kaverisi nimi");
+    let person = prompt("Kirjoita kaverisi nimi");
+    
 
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        person;
+    for(var i=1; i<=10; i++) {
+        document.write(`${person}`);
+        document.write('<br>');
+
+        i++;
     }
+
+    
 }
