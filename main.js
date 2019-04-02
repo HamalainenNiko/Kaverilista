@@ -1,9 +1,8 @@
-var names = [];
+function myFunction(){
+    var person = prompt("Kirjoita kaverisi nimi");
 
-function listFriends() {
-    names.push(document.getElementsByClassName("userinput").value);
-    document.getElementById("demo").innerHTML = names;
-    var x = document.getElementById("demo");
-    x.innerHTML = names.join("<br/>");
-    console.log();
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        person;
+    }
 }
