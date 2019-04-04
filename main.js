@@ -1,12 +1,20 @@
 function myFunction(){
-    var person = prompt("Kirjoita kaverisi nimi");
-    
+    var person = prompt("Lisää nimi")
 
-    for(var i=1; i<=10; i++) {
-        document.getElementById("demo").innerHTML = person;
+    var count = 10
 
-        i++;
-    }
 
-    
+
+for(var i = 0; i < count; i++){
+    document.writeln(person[i]);
+    if(i == 10) {
+        break;
+    }   
 }
+
+
+
+
+
+}
+
