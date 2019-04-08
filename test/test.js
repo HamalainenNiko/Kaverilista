@@ -1,19 +1,12 @@
-function myFunction(){
-    var person = prompt("Lisää nimi")
-
-    var count = 10
-
-
-
-for(var i = 0; i < count; i++){
-    document.writeln(person[i]);
-    if(i == 10) {
-        break;
-    }   
+function myFunction() {
+    var person = prompt("Lisää nimi");
+    var text = "";
+do {
+    text += person;
 }
 
+while ( person < 10);
 
-
-
-
+document.getElementById("demo").innerHTML = person;
+console.log(person)
 }
