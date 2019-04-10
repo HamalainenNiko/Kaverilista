@@ -1,12 +1,17 @@
 function myFunction() {
-    var person = prompt("Lisää nimi");
-    var text = "";
-do {
-    text += person;
-}
 
-while ( person < 10);
+    var i = 0
+    var x = document.getElementById("demo");
 
-document.getElementById("demo").innerHTML = person;
-console.log(person)
+    do {
+        var person = prompt("Lisää nimi");
+        i++;
+        x.innerHTML = person.join("<br/>");
+        document.getElementById("demo").innerHTML = person;
+    }
+
+    while(i < 10) {
+    
+    }
+
 }
